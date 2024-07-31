@@ -123,7 +123,7 @@ def product(request, pk):
 
 def home(request):
     products = Product.objects.all()
-    return render(request, 'home.html', {'products': products})
+    return render(request, 'index.html', {'products': products})
 
 
 def about(request):
